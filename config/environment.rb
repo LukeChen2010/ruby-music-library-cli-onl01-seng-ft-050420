@@ -203,6 +203,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     
+<<<<<<< HEAD
     input = ""
 
     until input == "exit"
@@ -222,6 +223,12 @@ class MusicLibraryController
       when "play song"
         play_song
       end
+=======
+    input = gets
+    
+    until input == "exit"
+      input = gets
+>>>>>>> 3f71bbd983fcdce7865ee389b0c3b936d11e6dff
     end
   end
   
@@ -259,6 +266,7 @@ class MusicLibraryController
   end
   
   def list_songs_by_artist
+<<<<<<< HEAD
     puts "Please enter the name of an artist:"
     artist = gets
     artist_songs = Song.all.select {|x| x.artist.name == artist}
@@ -294,6 +302,9 @@ class MusicLibraryController
     if num > 0 && num < songs.count - 1
       puts "Playing #{songs[num].name} by #{songs[num].artist.name}"
     end
+=======
+    puts "Please enter the "
+>>>>>>> 3f71bbd983fcdce7865ee389b0c3b936d11e6dff
   end
   
 end
